@@ -22,7 +22,7 @@ export default class Flo extends Component {
             })
         })
     }
-    // sett()
+    // sett() 
     // console.log(this.state.list)
         hand=(e)=>{
             this.setState({
