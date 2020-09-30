@@ -45,6 +45,10 @@ export default class Flo extends Component {
                 })
             })
         }
+        dara = (id)=>{
+            console.log(id)
+
+        }
         render() {
             let {list,user,ax} = this.state
             // console.log(this.state.list)
@@ -56,7 +60,10 @@ export default class Flo extends Component {
                 <button type="" onClick={this.handJ}>添加</button>
                 {
                     list.map((item,index)=>{
-                    return <li key={index}>{item.id} {item.author}{item.title}</li>
+                    return <li key={index}>{item.id} {item.author}{item.title}
+                        <button type="" onClick={this.dara.bind(this,item.id)}>删除</button>
+                        <button type="" >修改</button>
+                    </li>
                     })
                 }
             </div>
